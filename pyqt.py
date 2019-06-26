@@ -68,15 +68,15 @@ class MainWindow(QMainWindow):
 
     def genarate(self):
         text = self.plainTextEdit.toPlainText()
-        self.write_file('D://dataStructure//408//Program.txt',text)
+        self.write_file('D://dataStructure//408//Program.txt',text) #这里改成你要输入的数据文件的路径
         # subprocess.Popen('.\Quant.exe',shell=True)
-        subprocess.call('.\Quant.exe',shell = True)
+        subprocess.call('.\Quant.exe',shell = True) #这里改成你的c++写出来的文件名，你写的XX.cpp，旁边有XX.exe，改成你的exe的名字
 
         print("Genarated")
     #     setTextBrowser(self)
 
     # def setTextBrowser(self):
-        f = open('D://dataStructure//408//Code.txt')
+        f = open('D://dataStructure//408//Code.txt') #这里改成你输出的数据文件的路径
         Quant = f.read()
         self.textBrowser.setText(Quant)
         
